@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "17600786572",
+    "project_id": "signbridge-e816a",
+    "storage_bucket": "signbridge-e816a.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:17600786572:android:18b6b05987025601834ba9",
+        "android_client_info": {
+          "package_name": "com.example.signbridge"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "17600786572-smvc3l0tai966v8717gd09604po9ltct.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDvvCwHWuUUyN0NavbCGHzGP3ZxRJNq3so"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "17600786572-smvc3l0tai966v8717gd09604po9ltct.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

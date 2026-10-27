@@ -1,0 +1,8 @@
+__pycache__/
+.pytest_cache/
+*.db
+.env
+media/clips/*
+!media/clips/.gitkeep
+models/*
+!models/.gitkeep

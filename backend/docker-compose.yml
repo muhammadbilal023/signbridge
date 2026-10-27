@@ -1,0 +1,26 @@
+services:
+  db:
+    image: postgres:16
+    environment:
+      POSTGRES_USER: signbridge
+      POSTGRES_PASSWORD: signbridge
+      POSTGRES_DB: signbridge
+    volumes: ["pgdata:/var/lib/postgresql/data"]
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U signbridge"]
+      interval: 5s
+      retries: 10
+  api:
+    build:
+      context: .
+      args:
+        INSTALL_ML: "false"       # set "true" for Whisper / TTS / JPEG frames / emotion
+    env_file: [.env]
+    environment:
+      DATABASE_URL: postgresql+psycopg://signbridge:signbridge@db:5432/signbridge
+    depends_on:
+      db: {condition: service_healthy}
+    ports: ["8000:8000"]
+    volumes: ["./models:/app/models", "./media:/app/media"]
+volumes:
+  pgdata:

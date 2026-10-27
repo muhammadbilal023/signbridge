@@ -1,0 +1,9 @@
+# Optional. Install later, when you have a trained model (models/word_model.onnx) or want Whisper / TTS / emotion.
+# onnxruntime has NO wheels for very new Python versions - if pip says "no matching distribution", use Python 3.12.
+onnxruntime>=1.17
+mediapipe
+opencv-python-headless
+faster-whisper
+transformers
+torch
+scipy

@@ -1,0 +1,11 @@
+# Local virtual environments (never commit interpreter copies)
+backend/venv/
+frontend/.venv/
+node_modules/
+
+# Dart/Flutter tooling caches
+.dart_tool/
+
+# OS / editor noise
+Thumbs.db
+Desktop.ini

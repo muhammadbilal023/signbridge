@@ -1,0 +1,2 @@
+# Optional. Only needed when DATABASE_URL points to PostgreSQL (SQLite works without it).
+psycopg[binary]>=3.1

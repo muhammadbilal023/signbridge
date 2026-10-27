@@ -1,0 +1,5 @@
+-r requirements.txt
+pytest>=8
+websockets
+aiohttp
+# optional, for the ONNX test (needs Python <= 3.12 for onnxruntime):  pip install onnx onnxruntime
